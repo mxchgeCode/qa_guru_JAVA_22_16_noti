@@ -80,7 +80,7 @@ public class RegistrationFormDataGenerator {
     }
 
     public String generatePicture() {
-        return "1.png";
+        return "testname.png";
     }
 }
 

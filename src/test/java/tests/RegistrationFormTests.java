@@ -34,7 +34,7 @@ public class RegistrationFormTests extends TestBaseRemote {
                 hobby1 = "Music",
                 hobby2 = "Sports",
                 currentAddress = "Gandhi Chowk Street, 10",
-                pictureFileFromClassPath = "1.png",
+                pictureFileFromClassPath = "testname.png",
                 stateName = "Uttar Pradesh",
                 cityName = "Agra";
 
