@@ -2,7 +2,6 @@ package pages;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
-import helpers.Attach;
 import pages.components.CalendarComponent;
 
 import java.util.Date;
