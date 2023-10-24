@@ -50,6 +50,9 @@ public class TestBaseRemote {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.addVideo();
+        if (!Configuration.browser.equalsIgnoreCase("firefox")){
+            Attach.browserConsoleLogs();
+        }
         closeWebDriver();
     }
 }
