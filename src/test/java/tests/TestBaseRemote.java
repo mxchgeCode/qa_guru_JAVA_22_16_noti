@@ -47,9 +47,6 @@ public class TestBaseRemote {
 
     @AfterEach
     void addArtefactsToReport() {
-//        if (!Configuration.browser.equalsIgnoreCase("firefox")){
-//            Attach.screenshotAs("Last screenshot");
-//        }
         Attach.screenshotAs("Last screenshot");
         if (!Configuration.browser.equalsIgnoreCase("firefox")){
             Attach.browserConsoleLogs();

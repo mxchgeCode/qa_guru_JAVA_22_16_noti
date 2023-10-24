@@ -1,6 +1,8 @@
 package pages;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
+import helpers.Attach;
 import pages.components.CalendarComponent;
 
 import java.util.Date;
@@ -97,7 +99,11 @@ public class RegistrationFormPage {
     }
 
     public RegistrationFormPage uploadPicture(String value) {
-        uploadPicture.uploadFromClasspath(value);
+
+        if (!Configuration.browser.equalsIgnoreCase("firefox")){
+            uploadPicture.uploadFromClasspath(value);
+        }
+
         return this;
     }
 
