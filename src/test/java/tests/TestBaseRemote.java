@@ -47,12 +47,13 @@ public class TestBaseRemote {
 
     @AfterEach
     void addArtefactsToReport() {
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
-        Attach.addVideo();
+        if (!Configuration.browser.equalsIgnoreCase("firefox")){
+            Attach.screenshotAs("Last screenshot");
+        }
         if (!Configuration.browser.equalsIgnoreCase("firefox")){
             Attach.browserConsoleLogs();
         }
+        Attach.pageSource();
         closeWebDriver();
     }
 }
